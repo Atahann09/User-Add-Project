@@ -1,0 +1,116 @@
+﻿@model IEnumerable<WebApplication1.Models.Kisiler>
+@{
+    ViewBag.Title = "Index";
+}
+
+<div class="form-horizontal">
+
+    <hr />
+    <div class="form-group">
+        <table class="table table-responsive" style="width:400px">
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.PersonId)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Name)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Surname)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Adres)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.CepNo)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Email)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Tarih)
+                </th>
+            </tr>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <th>
+                        @Html.DisplayFor(modelItem => item.PersonId)
+                    </th>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Name)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Surname)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Adres)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.CepNo)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Email)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Tarih)
+                    </td>
+                </tr>
+            }
+
+        </table>
+        <table class="table">
+            <thead class="thead-dark">
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">CRA - Clinical Research Associate</th>
+                    <th scope="col">CRM - Clinical Research Management</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">1</th>
+                    <td>Soft Skill Training</td>
+                    <th>Karriere Coaching</th>
+                </tr>
+                <tr>
+                    <th scope="row">2</th>
+                    <td>GMP</td>
+                    <td>Soft Skill Training</td>
+                </tr>
+                <tr>
+                    <th scope="row">3</th>
+                    <td>GCP</td>
+                    <td>GMP</td>
+                </tr>
+                <tr>
+                    <th scope="row">4</th>
+                    <td>Karriere Coaching</td>
+                    <td>GCP</td>
+                </tr>
+                <tr>
+                    <th scope="row">5</th>
+                    <td>LS-PPM Projektmanagement</td>
+                    <td>LS-PPM Projektmanagement</td>
+                </tr>
+                <tr>
+                    <th scope="row">6</th>
+                    <td>Klinische Forschung</td>
+                    <td>Klinische Forschung</td>
+                </tr>
+                <tr>
+                    <th scope="row">7</th>
+                    <td> </td>
+                    <td>Qualitätsmanagementbeauftragte/r</td>
+                </tr>
+                <tr>
+                    <th scope="row">8</th>
+                    <td> </td>
+                    <td>Qualitätssicherung Pharma</td>
+                </tr>
+            </tbody>
+        </table>
+
+        
+    </div>
+</div>
